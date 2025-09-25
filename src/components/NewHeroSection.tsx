@@ -1,6 +1,5 @@
 'use client'
 
-import Image from 'next/image'
 import DiagonalPattern from './DiagonalPattern'
 import BannerSection from './BannerSection'
 import ProfileHeader from './ProfileHeader'
@@ -133,13 +132,33 @@ export default function NewHeroSection() {
                     <span className="font-medium dark:text-white text-black">DSA & Problem Solving:</span> Actively solving problems on LeetCode to sharpen my algorithmic thinking and system design skills. Currently working on improving my problem-solving efficiency and understanding of data structures.
                   </ContentParagraph>
                   <div className="flex justify-center">
-                    <Image 
-                      src="https://leetcard.jacoblin.cool/rpmakki?theme=dark&font=Baloo%20Tamma%202&ext=contest" 
-                      alt="LeetCode Stats" 
-                      width={400}
-                      height={200}
-                      className="rounded-lg shadow-lg" 
-                    />
+                    <div className="w-full max-w-md">
+                      <img 
+                        src="https://leetcard.jacoblin.cool/rpmakki?theme=dark&font=Baloo%20Tamma%202&ext=contest" 
+                        alt="LeetCode Stats" 
+                        className="w-full h-auto rounded-lg shadow-lg"
+                        onError={(e) => {
+                          e.currentTarget.style.display = 'none';
+                          e.currentTarget.nextElementSibling.style.display = 'block';
+                        }}
+                      />
+                      <div className="hidden text-center p-8 bg-gray-100 dark:bg-gray-800 rounded-lg">
+                        <p className="text-gray-600 dark:text-gray-400">
+                          LeetCode stats temporarily unavailable
+                        </p>
+                        <p className="text-sm text-gray-500 dark:text-gray-500 mt-2">
+                          Visit my LeetCode profile: 
+                          <a 
+                            href="https://leetcode.com/rpmakki" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-blue-600 dark:text-blue-400 hover:underline ml-1"
+                          >
+                            @rpmakki
+                          </a>
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
