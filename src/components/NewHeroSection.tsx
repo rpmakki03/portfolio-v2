@@ -39,7 +39,6 @@ export default function NewHeroSection() {
               twitter: "https://x.com/rpmakki",
               github: "https://github.com/rpmakki03",
               linkedin: "https://www.linkedin.com/in/akshat-srivastava-814505216",
-              resume: "https://drive.google.com/file/d/1hIM6tNkN2UzIgRt3S5zk6UJoLCiYuQ1s/view?usp=sharing",
             }}
           />
           

@@ -5,11 +5,7 @@ import { FaGithub} from "react-icons/fa6";
 import { FiArrowUpRight } from "react-icons/fi";
 import Link from "next/link";
 import Image from "next/image";
-import Video from "next-video";
 import { useHapticFeedback } from '@/hooks/useHapticFeedback';
-import donezovideo from '/videos/donezo.mp4';
-import mindMentorVideo from '/videos/mind-mentor.mp4';
-import satyaCheckVideo from '/videos/satya-check.mp4';
 
 
 interface ProjectCardProps {
@@ -17,19 +13,6 @@ interface ProjectCardProps {
   isDetailed?: boolean;
 }
 
-// Map video IDs to imported video assets
-const getVideoSource = (videoId: string) => {
-  switch (videoId) {
-    case 'donezo':
-      return donezovideo;
-    case 'mind-mentor':
-      return mindMentorVideo;
-    case 'satya-check':
-      return satyaCheckVideo;
-    default:
-      return null;
-  }
-};
 
 export const ProjectCard = ({ project, isDetailed = false }: ProjectCardProps) => {
   const { triggerHaptic, isMobile } = useHapticFeedback();
@@ -87,20 +70,7 @@ export const ProjectCard = ({ project, isDetailed = false }: ProjectCardProps) =
         </div>
       </header>
 
-      {project.video && getVideoSource(project.video) ? (
-        <div className="mt-6 sm:mt-8 mb-6 sm:mb-8 aspect-video w-full">
-          <Video
-            src={getVideoSource(project.video)!}
-            poster={project.image}
-            className="w-full h-full rounded-lg object-cover"
-            controls
-            playsInline
-            autoPlay
-            muted
-            loop
-          />
-        </div>
-      ) : project.image && (
+      {project.image && (
         <div className="mt-6 sm:mt-8 mb-6 sm:mb-8 w-full aspect-video relative"> {/* Changed height to aspect-video */}
           <Image 
             src={project.image}

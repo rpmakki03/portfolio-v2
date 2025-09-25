@@ -3,34 +3,16 @@
 import { Project } from '@/types/project'
 import Link from "next/link";
 import Image from "next/image";
-import Video from "next-video";
 import { motion } from 'framer-motion';
 import { useHapticFeedback } from '@/hooks/useHapticFeedback';
-import donezovideo from '/videos/donezo.mp4';
-import mindMentorVideo from '/videos/mind-mentor.mp4';
-import satyaCheckVideo from '/videos/satya-check.mp4';
 
 interface MasonryProjectCardProps {
   project: Project;
   className?: string;
 }
 
-// Map video IDs to imported video assets
-const getVideoSource = (videoId: string) => {
-  switch (videoId) {
-    case 'donezo':
-      return donezovideo;
-    case 'mind-mentor':
-      return mindMentorVideo;
-    case 'satya-check':
-      return satyaCheckVideo;
-    default:
-      return null;
-  }
-};
 
 export const MasonryProjectCard = ({ project, className = "" }: MasonryProjectCardProps) => {
-  const videoSource = project.video ? getVideoSource(project.video) : null;
   const { triggerHaptic, isMobile } = useHapticFeedback();
 
   const handleCardClick = () => {
@@ -54,20 +36,7 @@ export const MasonryProjectCard = ({ project, className = "" }: MasonryProjectCa
           {/* Media Section */}
           <div className="relative overflow-hidden rounded-lg group">
             <div className="relative w-full overflow-hidden rounded-lg">
-              {videoSource ? (
-                <div className="relative h-full w-full">
-                  <Video
-                    src={videoSource}
-                    poster={project.image}
-                    className="w-full h-full rounded-sm"
-                    playsInline
-                    autoPlay
-                    muted
-                    loop
-                    controls={false}
-                  />
-                </div>
-              ) : project.image ? (
+              {project.image ? (
                 <Image
                   src={project.image}
                   alt={project.title}

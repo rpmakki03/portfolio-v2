@@ -1,5 +1,5 @@
 'use client';
-import { FaLinkedin, FaXTwitter, FaGithub, FaPaperclip } from "react-icons/fa6";
+import { FaLinkedin, FaXTwitter, FaGithub } from "react-icons/fa6";
 import { useHapticFeedback } from '@/hooks/useHapticFeedback';
 
 interface ProfileHeaderProps {
@@ -9,7 +9,6 @@ interface ProfileHeaderProps {
   profileImage?: string
   socialLinks?: {
     twitter?: string
-    resume?: string
     github?: string
     linkedin?: string
   }
@@ -24,7 +23,6 @@ export default function ProfileHeader({
     twitter: "https://x.com/rpmakki",
     github: "https://github.com/rpmakki03",
     linkedin: "https://www.linkedin.com/in/akshat-srivastava-814505216",
-    resume: "https://drive.google.com/file/d/1hIM6tNkN2UzIgRt3S5zk6UJoLCiYuQ1s/view?usp=sharing",
   }
 }: ProfileHeaderProps) {
   const { triggerHaptic, isMobile } = useHapticFeedback();
@@ -73,17 +71,6 @@ export default function ProfileHeader({
               onClick={handleLinkClick}
             >
               <FaXTwitter size={18} />
-            </a>
-          )}
-          {socialLinks.resume && (
-            <a 
-              className="hover:opacity-80" 
-              href={socialLinks.resume} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              onClick={handleLinkClick}
-            >
-              <FaPaperclip size={18} />
             </a>
           )}
          
