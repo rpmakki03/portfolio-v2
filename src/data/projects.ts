@@ -37,7 +37,7 @@ export const projects: Project[] = [
     description:
       'A sleek promotional site with bold hero, feature highlights and call-to-actions, optimized for speed and accessibility.',
     image: '/images/nike.jpg',
-    liveLink: 'https://rpmakki-revyourfilm.vercel.app/',
+    liveLink: 'https://rpmakki-nike-app.vercel.app/',
     tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Figma', 'Frontend'],
   },
 ];
