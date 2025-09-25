@@ -1,6 +1,6 @@
 'use client'
 
-import Link from 'next/link'
+import Image from 'next/image'
 import DiagonalPattern from './DiagonalPattern'
 import BannerSection from './BannerSection'
 import ProfileHeader from './ProfileHeader'
@@ -133,7 +133,13 @@ export default function NewHeroSection() {
                     <span className="font-medium dark:text-white text-black">DSA & Problem Solving:</span> Actively solving problems on LeetCode to sharpen my algorithmic thinking and system design skills. Currently working on improving my problem-solving efficiency and understanding of data structures.
                   </ContentParagraph>
                   <div className="flex justify-center">
-                    <img src="https://leetcard.jacoblin.cool/rpmakki?theme=dark&font=Baloo%20Tamma%202&ext=contest" alt="LeetCode Stats" className="rounded-lg shadow-lg" />
+                    <Image 
+                      src="https://leetcard.jacoblin.cool/rpmakki?theme=dark&font=Baloo%20Tamma%202&ext=contest" 
+                      alt="LeetCode Stats" 
+                      width={400}
+                      height={200}
+                      className="rounded-lg shadow-lg" 
+                    />
                   </div>
                 </div>
               </div>
