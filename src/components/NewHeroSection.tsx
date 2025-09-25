@@ -139,7 +139,10 @@ export default function NewHeroSection() {
                         className="w-full h-auto rounded-lg shadow-lg"
                         onError={(e) => {
                           e.currentTarget.style.display = 'none';
-                          e.currentTarget.nextElementSibling.style.display = 'block';
+                          const nextElement = e.currentTarget.nextElementSibling as HTMLElement;
+                          if (nextElement) {
+                            nextElement.style.display = 'block';
+                          }
                         }}
                       />
                       <div className="hidden text-center p-8 bg-gray-100 dark:bg-gray-800 rounded-lg">
