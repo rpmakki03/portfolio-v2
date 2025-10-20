@@ -38,20 +38,6 @@ export default function MinimalNavigation() {
           </motion.div>
           <div className="flex items-center gap-4 sm:gap-6">
             <motion.div
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <Link 
-                href="/projects" 
-                className={`text-sm sm:text-base font-[family-name:var(--font-instrument-serif)] hover:opacity-80 hover:underline transition-opacity ${
-                  isActive('/projects') ? 'opacity-100' : 'opacity-60'
-                }`}
-              >
-                projects
-              </Link>
-            </motion.div>
-            
-            <motion.div
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >

@@ -11,6 +11,7 @@ import Reachout from './Reachout'
 import CallToAction from './CallToAction'
 import ContributionsDisplay from './ContributionsDisplay'
 import TechStackMarquee from './TechStackMarquee'
+import { ProjectsSection } from './ProjectsSection'
 import { AnimatedShinyText } from './magicui/animated-shiny-text'
 
 export default function NewHeroSection() {
@@ -58,10 +59,10 @@ export default function NewHeroSection() {
               {/* About Section */}
               <ContentSection background className="pb-4 pt-1">
                 <ContentParagraph className="mt-4">
-                  <span className="font-medium dark:text-white text-black">3rd Year CS Undergraduate</span> passionate about Web3, Blockchain Security, and Full-Stack Development. I&apos;m currently working on Web3 Security research, DApps, and Smart Contract Auditing while also sharpening my DSA & system design skills.
+                  <span className="font-medium dark:text-white text-black">3rd Year CS Undergraduate</span> passionate about Web3, Blockchain Security, and Full-Stack Development. Currently working on DApps, Smart Contract Auditing, and Web3 Security research.
                 </ContentParagraph>
                 <ContentParagraph>
-                  <span className="font-medium dark:text-white text-black">Experienced in Web2 & Web3 development</span> with React/Next.js, Express, Supabase, Solidity, and Foundry. I&apos;m actively learning Smart Contract Security & Frontend Development, and yes, I&apos;m that person who hates but still solves DSA problems on LeetCode.
+                  <span className="font-medium dark:text-white text-black">Experienced in Web2 & Web3 development</span> with React/Next.js, Express, Supabase, Solidity, and Foundry. Actively learning Smart Contract Security and solving DSA problems on LeetCode.
                 </ContentParagraph>
               </ContentSection>
 
@@ -74,6 +75,13 @@ export default function NewHeroSection() {
               </div>
 
                 <SectionBorder className="mt-0 pt-0" />
+                
+                {/* Projects Section */}
+              <div className="mt-6">
+                <ProjectsSection maxProjects={6} />
+              </div>
+              
+              <SectionBorder className="mt-0 pt-0" />
               
                  {/* Tech Stack */}
               <div className="sm:px-12 px-6">
