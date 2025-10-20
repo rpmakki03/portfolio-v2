@@ -1,20 +1,10 @@
 'use client'
 
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
 import { ModeToggle } from '@/components/theme-toggle'
 import { motion } from 'framer-motion'
 
 export default function MinimalNavigation() {
-  const pathname = usePathname()
-  
-  // Helper function to determine if a link is active
-  const isActive = (path: string) => {
-    if (path === '/') {
-      return pathname === '/'
-    }
-    return pathname.startsWith(path)
-  }
   
   return (
     <motion.nav 

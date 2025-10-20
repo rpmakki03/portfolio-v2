@@ -1,6 +1,5 @@
 'use client';
 
-import { Project } from '@/types/project';
 import { projects } from '@/data/projects';
 import { FaGithub } from "react-icons/fa6";
 import { FiArrowUpRight } from "react-icons/fi";

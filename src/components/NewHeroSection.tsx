@@ -13,6 +13,7 @@ import ContributionsDisplay from './ContributionsDisplay'
 import TechStackMarquee from './TechStackMarquee'
 import { ProjectsSection } from './ProjectsSection'
 import { AnimatedShinyText } from './magicui/animated-shiny-text'
+import Image from 'next/image'
 
 export default function NewHeroSection() {
   return (
@@ -141,9 +142,11 @@ export default function NewHeroSection() {
                   </ContentParagraph>
                   <div className="flex justify-center">
                     <div className="w-full max-w-md">
-                      <img 
+                      <Image 
                         src="https://leetcard.jacoblin.cool/rpmakki?theme=dark&font=Baloo%20Tamma%202&ext=contest" 
                         alt="LeetCode Stats" 
+                        width={400}
+                        height={200}
                         className="w-full h-auto rounded-lg shadow-lg"
                         onError={(e) => {
                           e.currentTarget.style.display = 'none';
