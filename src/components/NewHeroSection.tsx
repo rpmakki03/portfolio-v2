@@ -13,6 +13,7 @@ import ContributionsDisplay from './ContributionsDisplay'
 import TechStackMarquee from './TechStackMarquee'
 import { ProjectsSection } from './ProjectsSection'
 import { AnimatedShinyText } from './magicui/animated-shiny-text'
+import AnimatedAppType from './AnimatedAppType'
 import Image from 'next/image'
 
 export default function NewHeroSection() {
@@ -49,10 +50,13 @@ export default function NewHeroSection() {
               {/* Current Role Section */}
               <ContentSection
                 subtitle="Full-Stack Developer | Open Source Contributor | Web3 Security"
-                title='Building <a class="text-[#006FEE] hover:underline" href="/projects">decentralized applications</a> and exploring Web3 security <span class="opacity-70 font-light">— Passionate about blockchain technology and solving challenging problems through code.</span>'
                 className="mt-6"
               >
-                <div></div>
+                <div className="pb-6">
+                  <p className="text-md sm:text-lg font-medium" style={{ letterSpacing: '-0.02em' }}>
+                    Building <AnimatedAppType /> and exploring Web3 security <span className="opacity-70 font-light">— Passionate about blockchain technology and solving challenging problems through code.</span>
+                  </p>
+                </div>
               </ContentSection>
               
               <SectionBorder className="mt-2" />
