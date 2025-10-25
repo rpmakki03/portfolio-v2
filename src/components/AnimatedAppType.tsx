@@ -20,18 +20,19 @@ export default function AnimatedAppType() {
       
       // Trigger glow effect
       setIsGlowing(true)
-      setTimeout(() => setIsGlowing(false), 500) // Glow for 500ms
-    }, 2000) // Change every 2 seconds
+      setTimeout(() => setIsGlowing(false), 600) // Glow for 600ms
+    }, 4000) // Change every 4 seconds
 
     return () => clearInterval(interval)
   }, [])
 
   return (
-    <span className={`
-      inline-block px-3 py-1 rounded-lg border-2 border-[#006FEE] 
-      text-[#006FEE] font-medium transition-all duration-500 ease-in-out
-      ${isGlowing ? 'shadow-[0_0_20px_rgba(0,111,238,0.6)] bg-[#006FEE]/10' : 'shadow-none bg-transparent'}
-    `}>
+    <span 
+      className="text-[#006FEE] font-medium transition-all duration-600 ease-in-out"
+      style={{
+        textShadow: isGlowing ? '0 0 15px rgba(0, 111, 238, 0.8)' : 'none'
+      }}
+    >
       {appTypes[currentIndex]}
     </span>
   )
