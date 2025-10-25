@@ -38,7 +38,7 @@ export default function Reachout({
     <div className="sm:px-12 px-4 pb-8">
       <div className="text-left w-full">
         <div className="mb-4 sm:mb-6">
-          <h2 className="font-[family-name:var(--font-instrument-serif)] text-md mb-2 opacity-30 mt-4 sm:mt-6">
+          <h2 className="font-[family-name:var(--font-bricolage-grotesque)] text-md mb-2 opacity-30 mt-4 sm:mt-6">
             <AnimatedShinyText>{title}</AnimatedShinyText>
           </h2>
           <p className="opacity-40 text-[13px] sm:text-[14px] mb-3 sm:mb-4">

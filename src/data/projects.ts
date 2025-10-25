@@ -38,13 +38,13 @@ export const projects: Project[] = [
     tags: ['Next.js', 'React', 'Node.js', 'Supabase'],
   },
   {
-    id: 'swolenormous',
-    title: 'Swolenormous',
+    id: 'strive',
+    title: 'Strive',
     description:
-      'Responsive fitness brand landing page with clean visuals, sections for offerings, testimonials, and a modern dark theme UI.',
+      'A modern workout generator app that creates personalized fitness routines. Features clean UI, exercise selection, and goal-based workout generation with Bricolage Grotesque typography.',
     image: '/images/swolenormous.jpg',
-    liveLink: 'https://rpmakki-swolenormous.vercel.app/',
-    tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Figma', 'Frontend'],
+    liveLink: 'https://rpmakki-strive.vercel.app/',
+    tags: ['React', 'Vite', 'Tailwind CSS', 'JavaScript', 'Frontend'],
   },
   {
     id: 'crix',

@@ -21,7 +21,7 @@ export default function MinimalNavigation() {
           >
             <Link 
               href="/"
-              className="text-lg sm:text-xl font-[family-name:var(--font-instrument-serif)] font-medium hover:opacity-80 hover:underline transition-opacity"
+              className="text-lg sm:text-xl font-[family-name:var(--font-bricolage-grotesque)] font-medium hover:opacity-80 hover:underline transition-opacity"
             >
               Akshat
             </Link>

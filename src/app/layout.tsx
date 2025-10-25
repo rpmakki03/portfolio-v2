@@ -1,21 +1,15 @@
 import type { Metadata } from "next";
-import {Poppins, Instrument_Serif} from "next/font/google";
+import {Bricolage_Grotesque} from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider"
 import { LoadingProvider } from "@/components/providers/LoadingProvider"
 import { ScrollToTop } from "@/components/ui/ScrollAnimations"
 
-const poppins = Poppins({
-  weight: ['300', '400', '500', '600', '700'],
-  style: 'normal',
-  subsets: ['latin']
-})
-
-const instrumentSerif = Instrument_Serif({
-  weight: ['400'],
+const bricolageGrotesque = Bricolage_Grotesque({
+  weight: ['200', '300', '400', '500', '600', '700', '800'],
   style: 'normal',
   subsets: ['latin'],
-  variable: '--font-instrument-serif'
+  variable: '--font-bricolage-grotesque'
 })
 
 export const metadata: Metadata = {
@@ -39,7 +33,7 @@ export default function RootLayout({
       <head>
         <meta name="google-site-verification" content="tMCNs2fgM6voEHBd3JsySffMFSiUCQDEFEF1iYI3-ZQ" />
       </head>
-      <body className={`${poppins.className} ${instrumentSerif.variable}`}>
+      <body className={`${bricolageGrotesque.className} ${bricolageGrotesque.variable}`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

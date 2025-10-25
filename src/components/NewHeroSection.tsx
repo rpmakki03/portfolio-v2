@@ -17,7 +17,7 @@ import Image from 'next/image'
 
 export default function NewHeroSection() {
   return (
-    <div className="min-h-screen transition-colors duration-300 font-['Poppins'] relative">
+    <div className="min-h-screen transition-colors duration-300 font-[family-name:var(--font-bricolage-grotesque)] relative">
       <div className="relative mx-auto max-w-4xl">
         {/* Diagonal Patterns */}
         <DiagonalPattern side="left" />
