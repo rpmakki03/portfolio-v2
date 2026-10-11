@@ -15,8 +15,8 @@ export default function CallToAction({
   profileImage = "/pfp.jpg",
   profileAlt = "Profile",
   linkText = "Let's Connect",
-  linkUrl = "mailto:rpmakki03@gmail.com",
-  preText = "Interested in Web3 development or smart contract security? Let's collaborate!"
+  linkUrl = "mailto:akshat3035@gmail.com",
+  preText = "Building an AI product, backend system, or ambitious web experience? Let's make it real."
 }: CallToActionProps) {
   const { triggerHaptic, isMobile } = useHapticFeedback();
 

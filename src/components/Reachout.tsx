@@ -23,7 +23,7 @@ export default function Reachout({
     twitter: "https://x.com/rpmakki",
     github: "https://github.com/rpmakki03",
     linkedin: "https://www.linkedin.com/in/akshat-srivastava-814505216",
-        mail: "mailto:rpmakki03@gmail.com",
+        mail: "mailto:akshat3035@gmail.com",
   },
 }: ReachoutProps) {
   const { triggerHaptic, isMobile } = useHapticFeedback();

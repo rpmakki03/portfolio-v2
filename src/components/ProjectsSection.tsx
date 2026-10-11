@@ -3,7 +3,6 @@
 import { projects } from '@/data/projects';
 import { FaGithub } from "react-icons/fa6";
 import { FiArrowUpRight } from "react-icons/fi";
-import { FiBookmark } from "react-icons/fi";
 import Link from "next/link";
 import { useHapticFeedback } from '@/hooks/useHapticFeedback';
 
@@ -29,8 +28,8 @@ export const ProjectsSection = ({ maxProjects = 6 }: ProjectsSectionProps) => {
           Projects
           <div className="w-16 h-0.5 bg-blue-400 dark:bg-blue-400 mt-2"></div>
         </h2>
-        <p className="text-neutral-600 dark:text-neutral-400 text-lg leading-relaxed">
-          A selection of blockchain and full-stack projects showcasing my technical expertise and problem-solving abilities.
+        <p className="text-neutral-600 dark:text-neutral-400 text-lg leading-relaxed max-w-2xl">
+          Selected work across agentic AI, applied machine learning, and full-stack product development.
         </p>
       </div>
       
@@ -40,11 +39,7 @@ export const ProjectsSection = ({ maxProjects = 6 }: ProjectsSectionProps) => {
             key={project.id}
             className="bg-card dark:bg-card border border-border dark:border-border rounded-lg p-6 hover:bg-accent dark:hover:bg-accent transition-colors duration-200 group"
           >
-            {/* Icons */}
             <div className="flex justify-end gap-2 mb-4">
-              <button className="text-muted-foreground hover:text-foreground transition-colors">
-                <FiBookmark className="w-4 h-4" />
-              </button>
               <Link
                 href={project.liveLink || project.githubLink || '#'}
                 target="_blank"

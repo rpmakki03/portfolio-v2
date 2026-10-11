@@ -16,8 +16,8 @@ interface ProfileHeaderProps {
 
 export default function ProfileHeader({
   name = "Akshat Srivastava",
-  age = "20",
-  title = "engineer • developer • builder",
+  age,
+  title = "software developer • generative AI • backend systems",
   profileImage = "/pfp.jpg",
   socialLinks = {
     twitter: "https://x.com/rpmakki",
@@ -46,8 +46,8 @@ export default function ProfileHeader({
           <h1 className="font-[family-name:var(--font-bricolage-grotesque)] text-3xl sm:text-4xl tracking-[0.01em] font-medium mb-0">
             {name}
           </h1>
-          <p className="opacity-40 text-[14px]">
-            {age} • {title}
+          <p className="opacity-50 text-[14px] mt-1">
+            {age ? `${age} • ` : ''}{title}
           </p>
         </div>
         <div className="flex justify-start space-x-4 mt-3 sm:mt-0">

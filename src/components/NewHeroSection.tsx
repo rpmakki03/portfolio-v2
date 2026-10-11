@@ -13,7 +13,6 @@ import ContributionsDisplay from './ContributionsDisplay'
 import TechStackMarquee from './TechStackMarquee'
 import { ProjectsSection } from './ProjectsSection'
 import { AnimatedShinyText } from './magicui/animated-shiny-text'
-import AnimatedAppType from './AnimatedAppType'
 import Image from 'next/image'
 
 export default function NewHeroSection() {
@@ -28,14 +27,13 @@ export default function NewHeroSection() {
         <div className="mx-auto sm:w-[calc(100%-120px)] w-full max-w-4xl">
           {/* Banner Section */}
           <BannerSection 
-            bannerImage="/smartc.jpg"
-            quote="Build • Secure • Deploy • Innovate"
+            bannerImage="/profile-banner.jpg"
+            quote=""
           />
           {/* Profile Header */}
           <ProfileHeader 
             name="Akshat Srivastava"
-            age="20"
-            title="full-stack developer • open source contributor • web3 security"
+            title="software developer • generative AI • backend systems"
             profileImage="/pfp.jpg"
             socialLinks={{
               twitter: "https://x.com/rpmakki",
@@ -49,12 +47,12 @@ export default function NewHeroSection() {
             <div className="text-base">
               {/* Current Role Section */}
               <ContentSection
-                subtitle="Full-Stack Developer | Open Source Contributor | Web3 Security"
+                subtitle="Python · Generative AI · Agentic Systems · Full Stack"
                 className="mt-6"
               >
                 <div className="pb-6">
                   <p className="text-md sm:text-lg font-medium" style={{ letterSpacing: '-0.02em' }}>
-                    Building <AnimatedAppType /> and exploring Web3 security <span className="opacity-70 font-light">— Passionate about blockchain technology and solving challenging problems through code.</span>
+                    I build intelligent software that turns complex workflows into useful products. <span className="opacity-70 font-light">From multi-agent research systems to production backend services, I care about clear architecture, reliable execution, and real user impact.</span>
                   </p>
                 </div>
               </ContentSection>
@@ -64,17 +62,17 @@ export default function NewHeroSection() {
               {/* About Section */}
               <ContentSection background className="pb-4 pt-1">
                 <ContentParagraph className="mt-4">
-                  <span className="font-medium dark:text-white text-black">3rd Year CS Undergraduate</span> passionate about Web3, Blockchain Security, and Full-Stack Development. Currently working on DApps, Smart Contract Auditing, and Web3 Security research.
+                  <span className="font-medium dark:text-white text-black">Computer Science undergraduate and software developer</span> specializing in Python, Generative AI, LLM application development, and retrieval-augmented generation.
                 </ContentParagraph>
                 <ContentParagraph>
-                  <span className="font-medium dark:text-white text-black">Experienced in Web2 & Web3 development</span> with React/Next.js, Express, Supabase, Solidity, and Foundry. Actively learning Smart Contract Security and solving DSA problems on LeetCode.
+                  <span className="font-medium dark:text-white text-black">Hands-on across the stack</span> with LangChain, agentic workflows, Node.js/Express, React/Next.js, PostgreSQL, MySQL, AWS, and automation tooling. My work has supported web applications serving 40K+ users.
                 </ContentParagraph>
               </ContentSection>
 
               <SectionBorder className="mt-0 pt-0" />
 
                {/* Experience Section */}
-              <div className="sm:px-12 px-6">
+              <div id="work" className="sm:px-12 px-6 scroll-mt-24">
                 <h2 className="text-md mb-2 opacity-30 mt-6"><AnimatedShinyText>Professional Experience</AnimatedShinyText></h2>
                 <ExperienceContent />
               </div>
@@ -93,16 +91,16 @@ export default function NewHeroSection() {
                 <h2 className="text-md mb-2 opacity-20 mt-6"><AnimatedShinyText>Tech Stack</AnimatedShinyText></h2>
                 <div className="space-y-4 dark:text-white/70 text-black/70 pb-6">
                   <ContentParagraph>
-                    <span className="font-medium dark:text-white text-black">Languages:</span> Java, JavaScript, TypeScript, Solidity, SQL
+                    <span className="font-medium dark:text-white text-black">AI & Generative AI:</span> Python, LLMs, RAG, LangChain, LangGraph, Agentic AI, NLP, MCP, Prompt Engineering
                   </ContentParagraph>
                   <ContentParagraph>
-                    <span className="font-medium dark:text-white text-black">Web Development:</span> React.js, Next.js, Node.js, Express.js, ShadCN UI
+                    <span className="font-medium dark:text-white text-black">Web & Backend:</span> Node.js, Express.js, React.js, Next.js, PostgreSQL, MySQL, REST APIs, Socket.io, Tailwind CSS
                   </ContentParagraph>
                   <ContentParagraph>
-                    <span className="font-medium dark:text-white text-black">Blockchain / Web3:</span> Solidity, Foundry, ZkSync
+                    <span className="font-medium dark:text-white text-black">Languages:</span> Python, JavaScript, Java, SQL, Solidity
                   </ContentParagraph>
                   <ContentParagraph>
-                    <span className="font-medium dark:text-white text-black">Tools & Platforms:</span> Git, GitHub, Postman, Framer, Gsap
+                    <span className="font-medium dark:text-white text-black">Automation & Cloud:</span> n8n, AWS EC2/S3, Docker, Git, GitHub, Postman, Obsidian
                   </ContentParagraph>
                 </div>
               </div>
@@ -142,7 +140,7 @@ export default function NewHeroSection() {
                 </h2>
                 <div className="space-y-4 dark:text-white/70 text-black/70 pb-6">
                   <ContentParagraph>
-                    <span className="font-medium dark:text-white text-black">DSA & Problem Solving:</span> Actively solving problems on LeetCode to sharpen my algorithmic thinking and system design skills. Currently working on improving my problem-solving efficiency and understanding of data structures.
+                    <span className="font-medium dark:text-white text-black">DSA & Problem Solving:</span> Peak contest rating of 1505 on LeetCode, backed by consistent practice across algorithms and core computer science fundamentals.
                   </ContentParagraph>
                   <div className="flex justify-center">
                     <div className="w-full max-w-md">

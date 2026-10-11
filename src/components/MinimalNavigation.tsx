@@ -27,6 +27,8 @@ export default function MinimalNavigation() {
             </Link>
           </motion.div>
           <div className="flex items-center gap-4 sm:gap-6">
+            <Link href="#work" className="hidden sm:block text-sm opacity-60 hover:opacity-100 transition-opacity">Work</Link>
+            <Link href="mailto:akshat3035@gmail.com" className="hidden sm:block text-sm opacity-60 hover:opacity-100 transition-opacity">Contact</Link>
             <motion.div
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}

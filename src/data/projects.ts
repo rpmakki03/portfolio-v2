@@ -2,49 +2,38 @@ import { Project } from '@/types/project'
 
 export const projects: Project[] = [
   {
+    id: 'researchmind',
+    title: 'ResearchMind',
+    description:
+      'An autonomous multi-agent research system that gathers live web intelligence, extracts technical context, writes citation-backed reports, and critiques its own output.',
+    longDescription:
+      'Orchestrates specialized Search, Reader, Writer, and Critic agents with structured scoring rubrics for higher-signal research and automated peer review.',
+    image: '/turboml.jpg',
+    githubLink: 'https://github.com/rpmakki03/Multi-agent-research-system',
+    tags: ['Python', 'Gemini', 'LangChain', 'Tavily', 'Streamlit'],
+  },
+  {
     id: 'student-saarthi',
     title: 'Student-Saarthi',
     description:
-      'Developed an AI-powered web platform that assists students in career counseling and personalized college selection using Google\'s Gemini API for intelligent recommendations.',
+      'An AI guidance platform using Gemini Flash and RAG to generate personalized career roadmaps, with voice interaction and preference-aware recommendations.',
     longDescription:
-      'Built a Next.js frontend integrated with Supabase for authentication, real-time data handling, and scalable backend support. Designed a user-friendly and responsive interface, enhancing engagement and simplifying the decision-making process for students exploring academic and career paths.',
+      'Built with Python, LangChain, Next.js, Supabase authentication, PostgreSQL persistence, and AWS deployment for a responsive student guidance experience.',
     image: '/images/swolenormous.jpg', // Using placeholder image
-    liveLink: 'http://student-saarthi.vercel.app',
-    githubLink: 'http://github.com/rpmakki03/student-saarthi',
-    tags: ['Next.js', 'Supabase', 'Gemini API', 'AI'],
+    liveLink: 'https://student-saarthi-sigma.vercel.app/',
+    githubLink: 'https://github.com/rpmakki03/Student-Saarthi',
+    tags: ['Python', 'LangChain', 'Next.js', 'Gemini', 'AWS', 'PostgreSQL'],
   },
   {
-    id: 'dapp-cord',
-    title: 'Dapp-Cord',
+    id: 'world-cup-predictor',
+    title: 'FIFA World Cup Predictor',
     description:
-      'Built a Web3-based decentralized communication platform inspired by Discord, enabling users to join and interact in on-chain chat rooms using their crypto wallets.',
+      'A machine-learning pipeline that predicts match outcomes from historical fixtures and simulates the tournament from group stages through the final.',
     longDescription:
-      'Developed and deployed smart contracts in Solidity with Hardhat for managing server creation, membership, and message storage on the Ethereum test network. Integrated React.js frontend with Web3.js for wallet connectivity, seamless blockchain interaction, and a modern, responsive user experience.',
+      'Combines feature engineering, multi-class models, and custom group-stage and knockout tiebreak logic to forecast complete tournament outcomes.',
     image: '/images/swolenormous.jpg', // Using placeholder image
-    liveLink: 'http://dapp-cord.vercel.app',
-    githubLink: 'http://github.com/rpmakki03/dapp-cord',
-    tags: ['React.js', 'Solidity', 'Hardhat', 'Web3.js'],
-  },
-  {
-    id: 'pitchnthread',
-    title: 'PitchNThread',
-    description:
-      'Developed a modern football kits e-commerce web app featuring product browsing, detailed item pages, and a functional add-to-cart system for smooth shopping experiences.',
-    longDescription:
-      'Implemented dynamic data management and authentication using Supabase, ensuring secure user sessions and efficient cart persistence. Designed a responsive, visually appealing UI with Next.js and React, optimizing performance and accessibility across devices.',
-    image: '/images/swolenormous.jpg', // Using placeholder image
-    liveLink: 'http://pitchnthread.vercel.app',
-    githubLink: 'http://github.com/rpmakki03/pitchnthread',
-    tags: ['Next.js', 'React', 'Node.js', 'Supabase'],
-  },
-  {
-    id: 'strive',
-    title: 'Strive',
-    description:
-      'A modern workout generator app that creates personalized fitness routines. Features clean UI, exercise selection, and goal-based workout generation with Bricolage Grotesque typography.',
-    image: '/images/swolenormous.jpg',
-    liveLink: 'https://rpmakki-strive.vercel.app/',
-    tags: ['React', 'Vite', 'Tailwind CSS', 'JavaScript', 'Frontend'],
+    githubLink: 'https://github.com/rpmakki03/worldcup-2022-project',
+    tags: ['Python', 'Pandas', 'NumPy', 'Scikit-learn', 'Jupyter'],
   },
   {
     id: 'crix',
@@ -59,8 +48,8 @@ export const projects: Project[] = [
     tags: ['Next.js', 'TypeScript', 'Supabase', 'Figma', 'Frontend'],
   },
   {
-    id: 'rev-your-film',
-    title: 'Rev Your Film',
+    id: 'nike-shoes-app',
+    title: 'Nike Shoes App',
     description:
       'A sleek promotional site with bold hero, feature highlights and call-to-actions, optimized for speed and accessibility.',
     image: '/images/nike.jpg',

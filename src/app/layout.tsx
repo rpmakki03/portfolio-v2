@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider"
 import { LoadingProvider } from "@/components/providers/LoadingProvider"
 import { ScrollToTop } from "@/components/ui/ScrollAnimations"
+import CursorFollower from "@/components/CursorFollower"
 
 const bricolageGrotesque = Bricolage_Grotesque({
   weight: ['200', '300', '400', '500', '600', '700', '800'],
@@ -13,8 +14,8 @@ const bricolageGrotesque = Bricolage_Grotesque({
 })
 
 export const metadata: Metadata = {
-  title: 'Akshat Srivastava',
-  description: 'Full-Stack Developer | Open Source Contributor | Web3 and Blockchain Security',
+  title: 'Akshat Srivastava — Software Developer & AI Engineer',
+  description: 'Software developer building Generative AI applications, agentic workflows, backend services, and full-stack products.',
   openGraph: {
     url: 'https://akshat-srivastava.vercel.app/',
     siteName: 'Akshat Srivastava Portfolio',
@@ -41,6 +42,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <LoadingProvider>
+            <CursorFollower />
             <div className="relative z-10">
               {children}
             </div>
